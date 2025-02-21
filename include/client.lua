@@ -21,9 +21,8 @@ getgenv().request = function(options)
   if options.Headers then
 		options.Headers["User-Agent"] = "Orion/1.0"
 		options.Headers["Orion-Fingerprint"] = options.Headers["Xeno-Fingerprint"]
-    options.Headers["Xeno-Fingerprint"] = nil
 	else
-		options.Headers = {["User-Agent"] = "Orion/1.0", ["Orion-Fingerprint"] = options.Headers["Xeno-Fingerprint"], ["Xeno-Fingerprint"] = nil}
+		options.Headers = {["User-Agent"] = "Orion/1.0", ["Orion-Fingerprint"] = options.Headers["Xeno-Fingerprint"],}
 	end
 
   return defaultRequest(options)
