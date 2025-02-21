@@ -15,6 +15,8 @@ getgenv().shared = shared
 
 -- ENV
 
+local defaultRequest = request
+
 getgenv().request = function(options)
   assert(type(options) == "table", "invalid argument #1 to 'request' (table expected, got " .. type(options) .. ") ", 2)
 
