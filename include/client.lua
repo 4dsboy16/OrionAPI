@@ -98,4 +98,6 @@ getgenv().orion.clonefunction = newcclosure(function(func)
     return newfunc
 end)
 
+print("[ Orion ]: Loaded")
+
 getgenv().IS_ORION_LOADED = true
